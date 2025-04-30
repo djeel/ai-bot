@@ -1,5 +1,3 @@
-Bien sûr ! Voici un exemple de `README.md` clair et complet pour ton projet de bot Minecraft intelligent avec contrôle par terminal et intégration GPT :
-
 ---
 
 # 🤖 GANGUI AI
