@@ -1,5 +1,3 @@
----
-
 # 🤖 GANGUI AI
 
 **Gangui** est un bot Minecraft programmable qui peut :  
