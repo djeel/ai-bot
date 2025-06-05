@@ -1,4 +1,4 @@
-# 🤖 GANGUI AI
+# 🤖 AI Minecraft bot
 
 **Gangui** est un bot Minecraft programmable qui peut :  
 - Suivre automatiquement les joueurs  
