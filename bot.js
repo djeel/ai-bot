@@ -1,4 +1,4 @@
-require('dotenv').config(); // Charge .env
+require('dotenv').config(); // Init .env
 const mineflayer = require('mineflayer');
 const { pathfinder, Movements, goals } = require('mineflayer-pathfinder');
 const readline = require('readline');
@@ -65,7 +65,7 @@ function createBot(i) {
     const words = prompt.split(" ");
     const command = words[0];
 
-    // ─── Commandes natives (sans GPT) ──────────────────────────────
+    // ─── Natives commands (without GPT) ──────────────────────────────
     if (prompt === "follow me") {
       const target = bot.players[username]?.entity;
       if (target) {
@@ -109,7 +109,7 @@ function createBot(i) {
       return;
     }
 
-    // ─── Requête GPT ───────────────────────────────────────────────
+    // ─── Request GPT ───────────────────────────────────────────────
     console.log(`[AI REQUEST] ${promptRaw}`);
     try {
       const response = await openai.chat.completions.create({
@@ -146,7 +146,7 @@ function createBot(i) {
 
 createBot(0);
 
-// ─── Contrôle clavier (ZQSD/WASD) ────────────────────────────────
+// ─── Keyboard control (ZQSD/WASD) ────────────────────────────────
 readline.emitKeypressEvents(process.stdin);
 process.stdin.setRawMode(true);
 
